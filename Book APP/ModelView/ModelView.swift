@@ -31,5 +31,9 @@ class ModelView:ObservableObject{
     func UpdateFavouite(id:Int){
         result[id].isFavourite.toggle()
     }
+    
+    func updateRating(id: Int,rating:Int) {
+        result[id].rating = rating
+    }
 
 }

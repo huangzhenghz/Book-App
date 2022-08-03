@@ -50,7 +50,8 @@ struct DetailView: View {
                             Text("5").tag(5)
                         }.padding().pickerStyle(.segmented)
                             .onChange(of: choose, perform: {value in
-                                book.rating = choose
+                                model.updateRating(id: book.id, rating: choose)
+//                                book.rating = choose
                         }).onAppear{
                             choose = book.rating
                         }
