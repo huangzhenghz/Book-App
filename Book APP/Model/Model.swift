@@ -8,7 +8,7 @@
 import Foundation
 
 
-struct Model:Identifiable,Decodable{
+class Model:Identifiable,Decodable{
     
     var title:String
     var author:String

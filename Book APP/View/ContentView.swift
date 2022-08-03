@@ -20,7 +20,7 @@ struct ContentView: View {
                     ScrollView{
                         ForEach(result.result){i in
                             NavigationLink(destination: {
-                                DetailView(result: i)
+                                DetailView(book: i)
                             }, label: {
                                 ZStack{
                                     Rectangle().foregroundColor(.white)
