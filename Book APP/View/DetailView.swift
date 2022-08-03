@@ -53,7 +53,7 @@ struct DetailView: View {
                                 model.updateRating(id: book.id, rating: choose)
 //                                book.rating = choose
                         }).onAppear{
-                            choose = book.rating
+                            choose = model.result[book.id].rating
                         }
 
 
